@@ -12,20 +12,20 @@ public class ImagePickerHelper {
     
     /// 获取全部的分组
     public static func fetchGroup(_ pickerType: ImagePickerType) -> [ImageGroup] {
-        let options = ImagePickerHelper.buildFetchOptions(pickerType)
+        let options = buildOptions(pickerType)
         return ImagePickerHelper.fetchAssetCollection(options).map{ buildGroup($0, options) }
     }
     
     /// 不分组，获取全部的资源
     public static func fetchItem(_ pickerType: ImagePickerType) -> [ImageItem] {
-        let options = ImagePickerHelper.buildFetchOptions(pickerType)
+        let options = buildOptions(pickerType)
         return fetchAllAssets(options).map{ buildItem($0)}
     }
 }
 
 private extension ImagePickerHelper {
     
-    static func buildFetchOptions(_ pickerType: ImagePickerType) -> PHFetchOptions {
+    static func buildOptions(_ pickerType: ImagePickerType) -> PHFetchOptions {
         let option = PHFetchOptions()
         option.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
         switch pickerType {
