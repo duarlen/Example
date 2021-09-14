@@ -7,13 +7,13 @@
 
 import UIKit
 
-class EnvironmentManager: NSObject {
+class EnvironmentManager {
 
-    static let shared = EnvironmentManager()
-
-    private(set) var environmentType = EnvironmentManager.getEnvironmentType()
+    static var instance: EnvironmentInterface { return EnvironmentManager.environmentType.instance }
     
-    func update(_ environmentType: EnvironmentType) {
+    private(set) static var environmentType = EnvironmentManager.getEnvironmentType()
+    
+    static func update(_ environmentType: EnvironmentType) {
         #if DEBUG
         if environmentType == self.environmentType  { return }
         EnvironmentManager.setEnvironmentType(environmentType)
@@ -21,7 +21,7 @@ class EnvironmentManager: NSObject {
         #endif
     }
     
-    func show(_ completion: (() ->())?) {
+    static func show(_ completion: (() ->())?) {
         #if DEBUG
         func buildAlertAction(_ type: EnvironmentType) -> UIAlertAction {
             return UIAlertAction(title: type.name, style: .default) { _ in
