@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3172836326F0487B0016273B /* WebPluginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172836226F0487B0016273B /* WebPluginInterface.swift */; };
+		3172836526F048B50016273B /* WebPluginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172836426F048B50016273B /* WebPluginManager.swift */; };
+		3172836826F049E60016273B /* GetAccountPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3172836726F049E60016273B /* GetAccountPlugin.swift */; };
 		31AE94F026EF2D9900752A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE94EF26EF2D9900752A5C /* AppDelegate.swift */; };
 		31AE94F426EF2D9900752A5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE94F326EF2D9900752A5C /* ViewController.swift */; };
 		31AE94F726EF2D9900752A5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31AE94F526EF2D9900752A5C /* Main.storyboard */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3172836226F0487B0016273B /* WebPluginInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPluginInterface.swift; sourceTree = "<group>"; };
+		3172836426F048B50016273B /* WebPluginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPluginManager.swift; sourceTree = "<group>"; };
+		3172836726F049E60016273B /* GetAccountPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAccountPlugin.swift; sourceTree = "<group>"; };
 		31AE94EC26EF2D9900752A5C /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31AE94EF26EF2D9900752A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31AE94F326EF2D9900752A5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +95,32 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		3172835C26F048420016273B /* WebPlugins */ = {
+			isa = PBXGroup;
+			children = (
+				3172836626F049BB0016273B /* Plugins */,
+				3172835D26F048530016273B /* Core */,
+			);
+			path = WebPlugins;
+			sourceTree = "<group>";
+		};
+		3172835D26F048530016273B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3172836426F048B50016273B /* WebPluginManager.swift */,
+				3172836226F0487B0016273B /* WebPluginInterface.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3172836626F049BB0016273B /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				3172836726F049E60016273B /* GetAccountPlugin.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
 		31AE94E326EF2D9900752A5C = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +144,7 @@
 			children = (
 				31AE94EF26EF2D9900752A5C /* AppDelegate.swift */,
 				31AE94F326EF2D9900752A5C /* ViewController.swift */,
+				3172835C26F048420016273B /* WebPlugins */,
 				31AE952126EF35F100752A5C /* Router */,
 				31AE951226EF336500752A5C /* Share */,
 				31AE950326EF2DBD00752A5C /* Environment */,
@@ -311,6 +344,7 @@
 				31AE94F026EF2D9900752A5C /* AppDelegate.swift in Sources */,
 				31AE950A26EF2DD400752A5C /* Development.swift in Sources */,
 				31AE951B26EF33C400752A5C /* SharePlatform.swift in Sources */,
+				3172836826F049E60016273B /* GetAccountPlugin.swift in Sources */,
 				31AE952526EF36AA00752A5C /* Router.swift in Sources */,
 				31AE952026EF33E000752A5C /* WeChatShare.swift in Sources */,
 				31AE951E26EF33D800752A5C /* QQShare.swift in Sources */,
@@ -319,9 +353,11 @@
 				31AE951826EF33C400752A5C /* ShareObject.swift in Sources */,
 				31AE950F26EF2DD400752A5C /* EnvironmentType.swift in Sources */,
 				31AE951926EF33C400752A5C /* ShareManager.swift in Sources */,
+				3172836526F048B50016273B /* WebPluginManager.swift in Sources */,
 				31AE952E26EF39E500752A5C /* TargetMember.swift in Sources */,
 				31AE953226EF45DE00752A5C /* TargetLogin.swift in Sources */,
 				31AE952A26EF370400752A5C /* TargetInterface.swift in Sources */,
+				3172836326F0487B0016273B /* WebPluginInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
