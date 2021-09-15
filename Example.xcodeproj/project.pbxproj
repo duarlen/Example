@@ -143,14 +143,14 @@
 			path = Plugins;
 			sourceTree = "<group>";
 		};
-		3172836926F076700016273B /* Image */ = {
+		3172836926F076700016273B /* ImagePicker */ = {
 			isa = PBXGroup;
 			children = (
 				3172837926F08A5E0016273B /* ImagePickerType.swift */,
 				3172837526F08A230016273B /* ImageGroup.swift */,
 				3172837326F07D260016273B /* ImagePickerHelper.swift */,
 			);
-			path = Image;
+			path = ImagePicker;
 			sourceTree = "<group>";
 		};
 		31AE94E326EF2D9900752A5C = {
@@ -177,7 +177,7 @@
 				31AE94EF26EF2D9900752A5C /* AppDelegate.swift */,
 				31AE94F326EF2D9900752A5C /* ViewController.swift */,
 				31D5A4D126F190F400BADB43 /* Network */,
-				3172836926F076700016273B /* Image */,
+				3172836926F076700016273B /* ImagePicker */,
 				3172835C26F048420016273B /* WebPlugins */,
 				31AE952126EF35F100752A5C /* Router */,
 				31AE951226EF336500752A5C /* Share */,
