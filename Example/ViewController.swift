@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
@@ -13,32 +14,21 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+      
     }
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let bb = ImagePickerHelper.fetchGroup(.image)
-        print(bb.last?.collection.localizedTitle)
-        print(bb.last?.items.count)
+        let a = LoginTarget.provider()
+        _ = a.rx.request(.login)
+            .mapEmptyDataModel()
+            .subscribe { _ in
+                print("成功")
+            } onError: { error in
+                print(error.networkError.localizedDescription)
+            }
         
-        
-        
-        return
-        let a = ["a", "b", "c"]
-        let b = ["a", "d", "e"]
-        let c = ["e", "f", "g"]
-        let d = [a, b, c]
-        let e = d.reduce([], +)
-        
-        var f: [String] = []
-        for i in e where !f.contains(i) {
-            f.append(i)
-        }
-        
-        print(f)
     }
 
 }

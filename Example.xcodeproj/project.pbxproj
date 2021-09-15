@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,6 +34,14 @@
 		31AE952A26EF370400752A5C /* TargetInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE952826EF370400752A5C /* TargetInterface.swift */; };
 		31AE952E26EF39E500752A5C /* TargetMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE952D26EF39E500752A5C /* TargetMember.swift */; };
 		31AE953226EF45DE00752A5C /* TargetLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AE953126EF45DE00752A5C /* TargetLogin.swift */; };
+		31D5A4E026F1945600BADB43 /* CoreTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4D726F1945600BADB43 /* CoreTargetType.swift */; };
+		31D5A4E126F1945600BADB43 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4D926F1945600BADB43 /* NetworkError.swift */; };
+		31D5A4E226F1945600BADB43 /* ResponseDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4DB26F1945600BADB43 /* ResponseDataModel.swift */; };
+		31D5A4E326F1945600BADB43 /* Response + map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4DC26F1945600BADB43 /* Response + map.swift */; };
+		31D5A4E426F1945600BADB43 /* PluginLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4DE26F1945600BADB43 /* PluginLogger.swift */; };
+		31D5A4E526F1945600BADB43 /* PluginTimeout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4DF26F1945600BADB43 /* PluginTimeout.swift */; };
+		31D5A4EA26F199B700BADB43 /* LoginTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4E926F199B700BADB43 /* LoginTarget.swift */; };
+		31D5A4ED26F1A52000BADB43 /* PluginCaches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D5A4EC26F1A52000BADB43 /* PluginCaches.swift */; };
 		7DF32DCB5D5CC5A3636E67FB /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A21C3E96C8FC36E2F0E638A1 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +75,14 @@
 		31AE952826EF370400752A5C /* TargetInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetInterface.swift; sourceTree = "<group>"; };
 		31AE952D26EF39E500752A5C /* TargetMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetMember.swift; sourceTree = "<group>"; };
 		31AE953126EF45DE00752A5C /* TargetLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetLogin.swift; sourceTree = "<group>"; };
+		31D5A4D726F1945600BADB43 /* CoreTargetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreTargetType.swift; sourceTree = "<group>"; };
+		31D5A4D926F1945600BADB43 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		31D5A4DB26F1945600BADB43 /* ResponseDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDataModel.swift; sourceTree = "<group>"; };
+		31D5A4DC26F1945600BADB43 /* Response + map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Response + map.swift"; sourceTree = "<group>"; };
+		31D5A4DE26F1945600BADB43 /* PluginLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginLogger.swift; sourceTree = "<group>"; };
+		31D5A4DF26F1945600BADB43 /* PluginTimeout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PluginTimeout.swift; sourceTree = "<group>"; };
+		31D5A4E926F199B700BADB43 /* LoginTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTarget.swift; sourceTree = "<group>"; };
+		31D5A4EC26F1A52000BADB43 /* PluginCaches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginCaches.swift; sourceTree = "<group>"; };
 		A1CF6D0EBC322646860E048F /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A21C3E96C8FC36E2F0E638A1 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3D1D5AB735F939AA73E732 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +176,7 @@
 			children = (
 				31AE94EF26EF2D9900752A5C /* AppDelegate.swift */,
 				31AE94F326EF2D9900752A5C /* ViewController.swift */,
+				31D5A4D126F190F400BADB43 /* Network */,
 				3172836926F076700016273B /* Image */,
 				3172835C26F048420016273B /* WebPlugins */,
 				31AE952126EF35F100752A5C /* Router */,
@@ -258,6 +275,69 @@
 			path = Targets;
 			sourceTree = "<group>";
 		};
+		31D5A4D126F190F400BADB43 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4E826F199A300BADB43 /* Instance */,
+				31D5A4E726F1999E00BADB43 /* Core */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		31D5A4D826F1945600BADB43 /* NetworkError */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4D926F1945600BADB43 /* NetworkError.swift */,
+			);
+			path = NetworkError;
+			sourceTree = "<group>";
+		};
+		31D5A4DA26F1945600BADB43 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4DB26F1945600BADB43 /* ResponseDataModel.swift */,
+				31D5A4DC26F1945600BADB43 /* Response + map.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		31D5A4DD26F1945600BADB43 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4DE26F1945600BADB43 /* PluginLogger.swift */,
+				31D5A4DF26F1945600BADB43 /* PluginTimeout.swift */,
+				31D5A4EC26F1A52000BADB43 /* PluginCaches.swift */,
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		31D5A4E626F195F400BADB43 /* TargetType */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4D726F1945600BADB43 /* CoreTargetType.swift */,
+			);
+			path = TargetType;
+			sourceTree = "<group>";
+		};
+		31D5A4E726F1999E00BADB43 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4E626F195F400BADB43 /* TargetType */,
+				31D5A4D826F1945600BADB43 /* NetworkError */,
+				31D5A4DA26F1945600BADB43 /* Response */,
+				31D5A4DD26F1945600BADB43 /* Plugins */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		31D5A4E826F199A300BADB43 /* Instance */ = {
+			isa = PBXGroup;
+			children = (
+				31D5A4E926F199B700BADB43 /* LoginTarget.swift */,
+			);
+			path = Instance;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,6 +349,7 @@
 				31AE94E826EF2D9900752A5C /* Sources */,
 				31AE94E926EF2D9900752A5C /* Frameworks */,
 				31AE94EA26EF2D9900752A5C /* Resources */,
+				0C7356F104CB614A8F5A86CF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +406,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0C7356F104CB614A8F5A86CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		12E3B5ED791E9F7C5032A7E0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -355,13 +453,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				31AE950C26EF2DD400752A5C /* Production.swift in Sources */,
+				31D5A4E126F1945600BADB43 /* NetworkError.swift in Sources */,
 				31AE951A26EF33C400752A5C /* ShareInterface.swift in Sources */,
+				31D5A4ED26F1A52000BADB43 /* PluginCaches.swift in Sources */,
 				31AE950D26EF2DD400752A5C /* EnvironmentManager.swift in Sources */,
+				31D5A4E526F1945600BADB43 /* PluginTimeout.swift in Sources */,
 				31AE94F426EF2D9900752A5C /* ViewController.swift in Sources */,
 				31AE94F026EF2D9900752A5C /* AppDelegate.swift in Sources */,
 				31AE950A26EF2DD400752A5C /* Development.swift in Sources */,
 				31AE951B26EF33C400752A5C /* SharePlatform.swift in Sources */,
 				3172836826F049E60016273B /* GetAccountPlugin.swift in Sources */,
+				31D5A4E226F1945600BADB43 /* ResponseDataModel.swift in Sources */,
 				31AE952526EF36AA00752A5C /* Router.swift in Sources */,
 				31AE952026EF33E000752A5C /* WeChatShare.swift in Sources */,
 				31AE951E26EF33D800752A5C /* QQShare.swift in Sources */,
@@ -370,12 +472,16 @@
 				31AE951826EF33C400752A5C /* ShareObject.swift in Sources */,
 				3172837626F08A230016273B /* ImageGroup.swift in Sources */,
 				31AE950F26EF2DD400752A5C /* EnvironmentType.swift in Sources */,
+				31D5A4E426F1945600BADB43 /* PluginLogger.swift in Sources */,
 				31AE951926EF33C400752A5C /* ShareManager.swift in Sources */,
+				31D5A4E326F1945600BADB43 /* Response + map.swift in Sources */,
 				3172836526F048B50016273B /* WebPluginManager.swift in Sources */,
 				3172837426F07D260016273B /* ImagePickerHelper.swift in Sources */,
+				31D5A4EA26F199B700BADB43 /* LoginTarget.swift in Sources */,
 				31AE952E26EF39E500752A5C /* TargetMember.swift in Sources */,
 				31AE953226EF45DE00752A5C /* TargetLogin.swift in Sources */,
 				31AE952A26EF370400752A5C /* TargetInterface.swift in Sources */,
+				31D5A4E026F1945600BADB43 /* CoreTargetType.swift in Sources */,
 				3172836326F0487B0016273B /* WebPluginInterface.swift in Sources */,
 				3172837A26F08A5E0016273B /* ImagePickerType.swift in Sources */,
 			);

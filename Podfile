@@ -8,5 +8,9 @@ target 'Example' do
   # Pods for Example
 #  pod 'WechatOpenSDK'
 #  pod 'TencentOpenAPI'
+
+  pod 'Moya/RxSwift', :inhibit_warnings => false
+  pod 'HandyJSON', :inhibit_warnings => false
+
   
 end
